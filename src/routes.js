@@ -9,7 +9,7 @@ const routes = [
   ...experienceController,
   ...skillController,
   ...projectController,
-  ...educationController
+  ...educationController,
 ];
 
 module.exports = routes;

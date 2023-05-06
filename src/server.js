@@ -11,7 +11,7 @@ const setup = () => {
   const server = new hapi.Server({
     port: PORT,
     host: HOST
-  })
+  });
 
   // Setup Routes
   server.route(routes);
@@ -24,13 +24,13 @@ const setup = () => {
       user: process.env.PG_USER,
       password: process.env.PG_PASSWORD,
       database: 'resume_db'
-    }
-  })
+    },
+  });
 
   // Attach database instance to hapi decorator
   server.decorate('request', 'knex', database);
 
-  return server
+  return server;
 };
 
 (async () => {
