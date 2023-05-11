@@ -9,7 +9,7 @@ exports.seed = async function(knex) {
     name: 'Hacktiv8 Indonesia',
     major: 'Fullstack Javascript',
     status: 'Graduate',
-    startDate: '01-09-2018',
-    endDate: '01-03-2019',
+    startDate: '2018-09-01',
+    endDate: '2019-03-01',
   });
 };

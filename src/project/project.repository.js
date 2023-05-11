@@ -1,5 +1,5 @@
 const getProjects = (knex) => {
-  return knex.select().table('project');
+  return knex.select().table('project').orderBy('date', 'desc');
 }
 
 const createProject = (knex, payload) => {

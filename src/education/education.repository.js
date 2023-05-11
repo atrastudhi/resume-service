@@ -1,5 +1,5 @@
 const getEducations = (knex) => {
-  return knex.select().table('education');
+  return knex.select().table('education').orderBy('startDate', 'desc');
 }
 
 const createEducation = (knex, payload) => {

@@ -1,5 +1,5 @@
 const getExperiences = (knex) => {
-  return knex.select().table('experience');
+  return knex.select().table('experience').orderBy('startDate', 'desc');
 }
 
 const createExperience = (knex, payload) => {

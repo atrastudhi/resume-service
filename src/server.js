@@ -3,14 +3,17 @@ const knex = require('knex');
 
 const routes = require('./routes');
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 const HOST = process.env.HOST || 'localhost';
 
 const setup = () => {
   // Setup Server
   const server = new hapi.Server({
     port: PORT,
-    host: HOST
+    host: HOST,
+    routes: {
+      cors: process.env.NODE_ENV === 'dev' || !process.env.NODE_ENV
+    }
   });
 
   // Setup Routes
