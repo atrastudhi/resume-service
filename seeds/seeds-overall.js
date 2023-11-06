@@ -9,7 +9,7 @@ exports.seed = async function(knex) {
     email: 'atras.r@gmail.com',
     name: 'Muh. Atras Rais Tudhi Saidi',
     about: 'Passionate software engineer. Back-End driver with tolerable Front-End skills. Involved building robust & scalable application.',
-    phoneNumber: '6281381721532',
+    phoneNumber: '628138xxxxxx',
     address: 'Jakarta, Indonesia'
   });
 };
